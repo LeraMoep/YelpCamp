@@ -16,8 +16,12 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
  
-var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+mongodb+srv = leratomoep:Hitz1kric++H@cluster0-118od.gcp.mongodb.net/admin?retryWrites=true&w=majority
 mongoose.connect(url), { useNewUrlParser: true, useUnifiedTopology: true };
+// mongo "mongodb+srv://cluster0-118od.gcp.mongodb.net/admin"  --username leratomoep
+// var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
